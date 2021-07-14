@@ -16,7 +16,7 @@
 
 <nav>
   <a>Home</a>
-  <a>Proficiencies</a>
+  <a href="#proficiencies">Proficiencies</a>
   <a>About</a>
   <a>Projects</a>
   <a>Contact</a>
@@ -44,7 +44,7 @@
   }
 
   a:last-of-type {
-    color: rgb(27, 233, 54);
+    color: #99b946;
     font-weight: 600;
   }
 

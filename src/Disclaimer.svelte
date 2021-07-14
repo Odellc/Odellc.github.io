@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import { fly } from "svelte/transition";
 </script>
 
@@ -38,4 +38,4 @@
       width: 100%;
     }
   }
-</style>
+</style> -->
