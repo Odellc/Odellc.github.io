@@ -15,12 +15,12 @@
 <svelte:window on:scroll={e => changeBackground(e)} />
 
 <nav>
-  <a>Home</a>
+  <a href="#home">Home</a>
   <a href="#proficiencies">Proficiencies</a>
-  <a>About</a>
-  <a>Projects</a>
-  <a>Contact</a>
-  <a>Hire Me!</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact">Hire Me!</a>
   <Disclaimer />
 </nav>
 

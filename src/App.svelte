@@ -9,6 +9,8 @@
   let page;
   let pageInfo = {};
 
+  let el;
+
   $: console.log("Page", page);
 
   router("/", () => {
@@ -41,16 +43,37 @@
     };
   }
 
+  const backToTop = () => {
+    if (window.pageYOffset >0){
+      el.style.visibility = "visible";
+
+    }else{
+      el.style.visibility = "hidden";
+    }
+
+  };
+
 
   
 </script>
 
+<svelte:window on:scroll={backToTop}></svelte:window>
 <main>
   <Navigation />
   <svelte:component this={page}></svelte:component>
+  <div class="back-to-top">
+    <a href="#home" bind:this={el}>^</a>
+  </div>
 
 </main>
 
 <style>
+.back-to-top{
+  color: white;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  visibility: hidden;
+}
  
 </style>

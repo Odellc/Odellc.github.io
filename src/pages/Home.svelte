@@ -1,11 +1,13 @@
 <script>
   import Proficiencies from "../Proficiencies.svelte";
   import About from "../About.svelte"
+  import Projects from "../Projects.svelte"
+  import Contact from "../Contact.svelte"
 
 </script>
 
 <main>
-  <div class="start" style="background-image: url(./assets/background.jpg);">
+  <section class="start" style="background-image: url(./assets/background.jpg);" id="home">
     <!-- <div class="name">
       <p class="name_tag"></p>
     </div> -->
@@ -13,19 +15,28 @@
     <h2 class="open">
       Data Analytics Management | Data scientist | Data Engineer
     </h2>
-  </div>
+  </section>
 
-  <div class="main_section">
+  <section class="main_section">
     <div class="container" id="proficiencies">
       <Proficiencies />
     </div>
-    <!-- <div class="container">
-      <ProjectsList />
-    </div> -->
-  </div>
-  <div class="about">
+  </section>
+  <section>
+    <div class="about" id="about">
     <About/>
-  </div>
+    </div>
+  </section>
+  <section>
+    <div class="projects" id="projects">
+    <Projects/>
+    </div>
+  </section>
+  <section>
+    <div class="contact" id="contact">
+    <Contact/>
+    </div>
+  </section>
 
 </main>
 
