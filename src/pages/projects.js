@@ -1,37 +1,25 @@
 export default [
   {
     id: Math.random() * Date.now(),
-    name: "meetups app",
-    url: ''
+    name: "Machine Learning",
+    descriptionIntro: '',
+    imageA: "./assets/Python.png",
+    descriptionBody: '',
+    imageB: "image 2",
+    descriptionConclusion: "",
+    filter: ["python", "machine learning", "d3"],
+
   },
   {
     id: Math.random() * Date.now(),
-    name: "budget calculator",
-    url: ''
+    name: "Data Mining",
+    descriptionIntro: '',
+    imageA: "./assets/R.jfif",
+    descriptionBody: '',
+    imageB: "image 2",
+    descriptionConclusion: "",
+    filter: ["r", "plotly"]
+
   },
-  {
-    id: Math.random() * Date.now(),
-    name: "Todo app",
-    url: ''
-  },
-  {
-    id: Math.random() * Date.now(),
-    name: "testing-library meetup",
-    url: ''
-  },
-  {
-    id: Math.random() * Date.now(),
-    name: "npm svelte-marquee",
-    url: ''
-  },
-  {
-    id: Math.random() * Date.now(),
-    name: "svelte-strapi-ecommerce",
-    url: ''
-  },
-  {
-    id: Math.random() * Date.now(),
-    name: "benditaburger e-commerce",
-    url: ''
-  }
+  
 ];

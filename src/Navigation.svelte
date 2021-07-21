@@ -16,8 +16,8 @@
 
 <nav>
   <a href="#home">Home</a>
-  <a href="#proficiencies">Proficiencies</a>
   <a href="#about">About</a>
+  <a href="#proficiencies">Proficiencies</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
   <a href="#contact">Hire Me!</a>

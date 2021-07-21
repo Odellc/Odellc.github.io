@@ -4,6 +4,10 @@
   import Projects from "../Projects.svelte"
   import Contact from "../Contact.svelte"
 
+   let projectFilter = null;
+
+   $: console.log("ProjectFilter", projectFilter)
+
 </script>
 
 <main>
@@ -17,25 +21,24 @@
     </h2>
   </section>
 
-  <section class="main_section">
-    <div class="container" id="proficiencies">
-      <Proficiencies />
-    </div>
-  </section>
-  <section>
-    <div class="about" id="about">
+  <section  class="about" id="about">
+    <h3>Let me introduce myself!</h3>
     <About/>
-    </div>
   </section>
-  <section>
-    <div class="projects" id="projects">
-    <Projects/>
-    </div>
+
+  <section class="main_section container" id="proficiencies">
+    <h3>Here are some of my Proficiencies</h3>
+      
+      <Proficiencies bind:projectFilter/>
   </section>
-  <section>
-    <div class="contact" id="contact">
+  
+  <section class="projects" id="projects">
+    <h3>Here is a glimpse of some of my projects</h3>
+    <Projects bind:projectFilter/>
+  </section>
+  <section class="contact" id="contact">
+    <h3>I would love to connect!</h3>
     <Contact/>
-    </div>
   </section>
 
 </main>
@@ -74,26 +77,43 @@
     position: relative;
   }
 
-
-
-  .main_section {
+  h3{
     display: flex;
-    flex-direction: row;
+    color: #99b946;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0.4em 0;
+    margin: 0 0 1em 0;
+    border-bottom: 1px solid white;
+    font-size: 2em;
+
   }
+
 
   .container {
     flex: 1;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 25px;
   }
 
+  section{
+    margin-bottom: 50px;
+  }
+
   .about {
     flex: 1;
-    color: black;
     justify-content: center;
     font-weight: 600;
+    padding: 25px;
+  }
+
+  .projects{
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
   }
 </style>

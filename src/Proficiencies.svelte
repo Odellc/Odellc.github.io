@@ -5,14 +5,21 @@
 
   let skills = [];
 
+  export let projectFilter;
+
   // lifecycle
   onMount(() => (skills = skillData));
+
+  const filterProject = (name)=>{
+    projectFilter = name;
+  }
+
 </script>
 
 <div class="skill_type">
   {#each skillData as skill, index (skill.id)}
     <div class="sub-skill">
-    <a href="{skill.url || "#"}">
+    <a href="#projects" on:click={e=> filterProject(skill.name)}>
       <img
         src={skill.src}
         alt={skill.name}
@@ -66,8 +73,8 @@
   }
 
   img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     /* transition: all 0.2s ease-in-out; */
   }
 
@@ -79,7 +86,7 @@
     display: flex;
     flex-direction: column;
     color:white;
-    font-size: .9rem;
+    font-size: .8rem;
     justify-content: center;
     align-items: center;
     

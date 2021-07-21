@@ -12,7 +12,7 @@
       counted on in a continuous basis.
 </h3>
 
-<img src="./assets/profile_pic.JPG"/>
+<div class="background-image" style="background-image: url(./assets/pp.JPG)"></div>
 </div>
 
 <style>
@@ -33,8 +33,12 @@
 }
 
 
-img{
-    width: 350px;
+.background-image{
+    
+    background: no-repeat;
+    background-position: center;
+    display: inline;
+    width: 250px;
     height: 250px;
     border-radius: 50%;
     background-size: cover;

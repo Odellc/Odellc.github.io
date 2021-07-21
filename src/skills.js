@@ -18,7 +18,7 @@ export default [
         name: "JavaScript",
         url: "/JavaScript",
         src: "./assets/JS.png",
-        blurb: "JavaScript is a great frontend development tool for website functionality, helped build a full stack, and use for D3 visualizations."
+        blurb: "JavaScript is a great frontend development tool for website functionality. My framework of preference is Svelte, even this website is built in it!"
     },
     {
         id: 5,
@@ -34,39 +34,42 @@ export default [
         src: "./assets/Tableau.jpg",
         blurb: "Love Tableau for quick analysis, dashboard distributions, or requiring report visualizations."
     },
-    {
-        id: 7,
-        name: "DataMining",
-        url: "/DataMining",
-        src: "./assets/DM.png",
-        blurb: "For Data Mining I use Python and R to help find anomalies, patterns or correlations in the data."
-    },
-    {
-        id: 8,
-        name: "Google Analytics",
-        url: "/Google Analytics",
-        src: "./assets/GA.png",
-        blurb: "Report and analyze real-time organizational web traffic, and user interactions with the websties."
-    },
+    // {
+    //     id: 7,
+    //     name: "DataMining",
+    //     url: "/DataMining",
+    //     src: "./assets/DM.png",
+    //     blurb: "For Data Mining I use Python and R to help find anomalies, patterns or correlations in the data."
+    // },
+    // {
+    //     id: 8,
+    //     name: "Google Analytics",
+    //     url: "/Google Analytics",
+    //     src: "./assets/GA.png",
+    //     blurb: "Report and analyze real-time organizational web traffic, and user interactions with the websties."
+    // },
     {
         id: 9,
         name: "Machine Learning",
         url: "/Machine Learning",
         src: "./assets/ML.jpg",
-        blurb: "Experience in supervized, unsupervised, and semi-supervized machine learning projects for predictions."
-    }, {
+        blurb: "Experience in supervised, unsupervised, and semi-supervised machine learning projects for predictions."
+    },
+    {
         id: 10,
         name: "Technical Reports",
         url: "/TechReports",
         src: "./assets/TechnicalReport.png",
         blurb: "Experience in writing technical statistical reports for detailed communication at variance end user techincal levels."
-    }, {
-        id: 11,
-        name: "Svelte",
-        url: "/Svelte",
-        src: "./assets/SvelteLogo.png",
-        blurb: "Written two web pages in svelte."
-    }, {
+    }, 
+    // {
+    //     id: 11,
+    //     name: "Svelte",
+    //     url: "/Svelte",
+    //     src: "./assets/SvelteLogo.png",
+    //     blurb: "Written two web pages in svelte."
+    // },
+    {
         id: 12,
         name: "Visualizations",
         url: "/Visualizations",

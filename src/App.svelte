@@ -2,12 +2,13 @@
   import Navigation from "./Navigation.svelte";
   import router from "page";
 
-  import Python from "./pages/Python.svelte";
+  import Template from "./pages/ProjectTemplate.svelte";
   import Home from "./pages/Home.svelte";
   import Proficiencies from "./Proficiencies.svelte"
 
   let page;
   let pageInfo = {};
+  let params;
 
   let el;
 
@@ -18,17 +19,19 @@
     updatePageInfo("home", "/");
   });
 
-  router("/python", () => {
-    console.log("PYTHON PATH");
-    page = Python;
-    updatePageInfo("python","/python");
-  });
+  // router("/proficiencies", () => {
+  //   console.log("proficiencies PATH");
+  //   page = Proficiencies;
+  //   updatePageInfo("proficiencies","/proficiencies");
+  // });
 
-  router("/proficiencies", () => {
-    console.log("proficiencies PATH");
-    page = Proficiencies;
-    updatePageInfo("proficiencies","/proficiencies");
-  });
+
+  router("/:projectName", (context,next) => {
+    params = context.params;
+    // updatePageInfo("python","/python");
+    next();
+  },() => page = Template);
+
 
   router("/*", () => {
     console.log("my page does not match");
@@ -60,7 +63,7 @@
 <svelte:window on:scroll={backToTop}></svelte:window>
 <main>
   <Navigation />
-  <svelte:component this={page}></svelte:component>
+  <svelte:component this={page} {params}></svelte:component>
   <div class="back-to-top">
     <a href="#home" bind:this={el}>^</a>
   </div>
