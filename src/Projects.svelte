@@ -44,15 +44,18 @@ import Cards from './Cards.svelte'
     .filter-buttons button{
         padding: 10px;
         overflow:hidden;
+        border: hidden;
+        border-left: .5px solid black;
+        border-right: .5px solid black;
         
     }
 
-    .filter-buttons button:first-of-type{
+    .filter-buttons button:first-child{
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
 
-    .filter-buttons button:last-of-type{
+    .filter-buttons button:last-child{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
