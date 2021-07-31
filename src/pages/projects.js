@@ -4,7 +4,7 @@ export default [
     name: "Machine Learning",
     descriptionIntro:
       "This is going to be the intro to the woooork I have done. I have no clue of what it will say.This is going to be the intro to the woooork I have done. I have no clue of what it will say.This is going to be the intro to the woooork I have done. I have no clue of what it will say.This is going to be the intro to the woooork I have done. I have no clue of what it will say.This is going to be the intro to the woooork I have done. I have no clue of what it will say.,",
-    imageA: "./assets/Python.png",
+    imageA: "./assets/MLPicture1.png",
     descriptionBody: "",
     imageB: "image 2",
     descriptionConclusion: "",
