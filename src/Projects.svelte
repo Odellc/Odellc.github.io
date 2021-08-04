@@ -69,6 +69,7 @@
   .card-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 25px;
   }
 </style>

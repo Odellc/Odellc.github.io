@@ -24,21 +24,20 @@
 <div class="project-template">
   <h1>{projectInfo.name}</h1>
 
-  <h3>Summary</h3>
-  <div class="intro">
-    <p>{projectInfo.descriptionIntro}</p>
+  <h5>{projectInfo.tools}</h5>
 
-    <img src={projectInfo.imageA} alt="Image One" width="300" height="300" />
+  <div class="intro">
+    <p>{projectInfo.summary}</p>
 
   </div>
 
-  <h3>Body</h3>
-  <p>{projectInfo.descriptionBody}</p>
+  <h3>Image</h3>
 
-  <img src={projectInfo.imageB} alt="Image Two" width="300" height="300" />
-
-  <h3>Conclusion</h3>
-  <p>{projectInfo.descriptionConclusion}</p>
+  {#each projectInfo.images as images_to_display}
+    <div>
+      <img src={images_to_display} alt="Image" width="300" height="300" />
+    </div>
+  {/each}
 
 </div>
 

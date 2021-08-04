@@ -23,7 +23,7 @@
   <a href={getHref(project.name)} bind:this={anchor}>
     <h3 bind:this={h3}>{project.name}</h3>
     <div bind:this={image} class="image-class">
-      <img src={project.imageA} alt={project.name} />
+      <img src={project.images[0]} alt={project.name} />
 
     </div>
   </a>
@@ -31,7 +31,7 @@
 
 <style>
   .card {
-    width: 250px;
+    flex: 1 1 19%;
     height: 250px;
     border: 1px solid #aaa;
     border-radius: 3px;
@@ -40,15 +40,25 @@
   }
 
   a {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
   }
 
   h3 {
-    padding: 0 0 0.2em 0;
-    margin: 0 0 1em 0;
+    /* flex: 1 1 auto; */
+    height: 50px;
+    width: 100%;
+    padding: 0 0 1.4em 0;
+    /* margin: 0 0 1em 0; */
     border-bottom: 1px solid #ff3e00;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .image-class {
+    flex: 0 1 auto;
   }
 
   :global(.image-class img) {
