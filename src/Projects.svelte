@@ -67,9 +67,12 @@
   }
 
   .card-container {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 25px; */
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 </style>

@@ -1,10 +1,10 @@
 export default [
   {
     id: Math.random() * Date.now(),
-    name: "Predicting Home Prices – Machine Learning",
+    name: "Predicting Home Prices - Machine Learning",
     summary:
       "When designing this project, the objective was to build a machine learning algorithm from scratch. I wanted to work on prediction using various statistical models, and really focused on some of the following: Lasso Ridge, Gradient Boost, Regression with various polynomials. I also wanted to see the impact of a correct model that was binarized and data that was not handled correctly (un-binarized). The model was broken into two different sets, one training and one test. What made this project so unique? Well besides all of the various statistical modeling and using a 10-fold cross-validation, there was significant preprocessing that had to happen. I needed to do imputations, drop columns that created over-fitting, and had to standardize the data. The end results where quite spectacular, I actually did pretty well and managed to achieve an accuracy around 12% on the competition. As exciting as this project is I could write pages about it but instead check out the code on the GitHub link below!",
-    images: ["./assets/MLPicture1.png", "./assets/ML Results.jpg"],
+    images: ["./assets/MLPicture1.png", "./assets/ML Results.png"],
     tools: ["Python", "sklearn", "scipy", "matplotlib", "pandas", "numpy"],
     filter: ["python", "machine learning"]
   },
@@ -65,8 +65,7 @@ export default [
   },
   {
     id: Math.random() * Date.now(),
-    name:
-      "Report: Accident! Analysis of New Zealand accident data with Poisson models",
+    name: "Accident! Analysis of New Zealand accident data with Poisson models",
     summary:
       "An understanding of road safety is critical for transportation officials and is also of interest to the general public. Two common modes of transportation are cars and motorcycles. Drivers may be interested to know whether being involved in a car accident with injuries would have a high chance of fatality. Motorcycle riders might want to know if weekends are safer for them to ride over weekdays with the commuter traffic. The purpose of this study is to analyze data on car and motorcycle accidents in New Zealand to answer the following two questions: Objective 1 - Is there a statistical difference in New Zealand reported car accidents with injuries vs accidents with fatalities by day of week or time of day? Objective 2 - Is a motorcyclist more likely to get in a reported accident on the weekday or the weekend in New Zealand? To answer these questions, I performed a simple exploratory analysis, and developed hypotheses. With the hypothesis in mind, I selected my primary model and fit multiple models to compare against. Next, I fit the residuals and made conclusions about the objectives of interest.",
     images: [
@@ -80,7 +79,7 @@ export default [
   {
     id: Math.random() * Date.now(),
     name:
-      "Report: Climate Change Contributor: Predicting Motor Vehicle Emissions with Time Series Techniques",
+      "Climate Change Contributor: Predicting Motor Vehicle Emissions with Time Series Techniques",
     summary:
       "𝐶𝑂2 emissions are known to be a key contributor to global climate change. A significant source of 𝐶𝑂2 emissions in the United States is from gas powered motor vehicles. To better understand emissions trajectory, I conducted a time series analysis of monthly motor vehicle 𝐶𝑂2 emissions in metric megatonnes from gasoline (excluding ethanol) in the United States for the time period between January 1973 and June 2013. I used four different time series techniques to gain a deeper understanding of the data and to set myself up to predict the next 24 months of emission levels. The techniques that I used were ARMA, (S)ARIMA, Holt-Winters Exponential Smoothing, and Spectral Analysis. Each method has a different approach to examining the time series, and my aim was to understand how they can be used to help with prediction analysis.",
     images: [
@@ -148,7 +147,7 @@ export default [
   {
     id: Math.random() * Date.now(),
     name:
-      "Report: Investigating the effects of race and gender on income using generalized linear models and penalized regression model",
+      "Investigating the effects of race and gender on income using generalized linear models and penalized regression model",
     summary:
       "In recent years there have been many different social discussions over the impact of race, sex, education and other factors on income. These questions can be investigated with census data. In this analysis I used census data for the state of Oregon from 2013-2017 to examine four questions of interest: 1) Does race affect income, 2) how does gender affect total income, 3) does education or hours worked per  a larger impact on total income, and 4) what is the relationship between hours of work and education attainment? I hypothesized that: 1) there is no difference between the different races and the affect that they have on income, 2) there is no difference in income between males and females, 3) there is no difference in the effect of education and hours worked per week on total income, and 4) there is no relation between hours of work and years of education. The alternative to these four hypotheses is that there is a difference. To make inference on these hypotheses I used a generalized linear model and model diagnostics that included penalized regression.",
     images: [

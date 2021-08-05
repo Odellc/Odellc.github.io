@@ -6,9 +6,10 @@
   export let params;
   let projectInfo = {};
 
-  onMount(async () => {
-    console.log("Params", params);
+  //   onMount(() => {
+  // console.log("Params", params);
 
+  $: if (projects != null) {
     for (let i = 0; i < projects.length; i++) {
       let name = getHref(projects[i].name).slice(1);
 
@@ -16,32 +17,63 @@
         projectInfo = projects[i];
       }
     }
-  });
+  }
 
-  $: console.log("params:", projectInfo);
+  //   $: console.log("ProjectInfo:", projectInfo);
 </script>
 
 <div class="project-template">
-  <h1>{projectInfo.name}</h1>
+  <div class="column">
+    {#each projectInfo.images as images_to_display}
+      <div>
+        <img src={images_to_display} alt="Image" width="300" height="300" />
+      </div>
+    {/each}
 
-  <h5>{projectInfo.tools}</h5>
-
-  <div class="intro">
-    <p>{projectInfo.summary}</p>
+    <div class="thumbnails">
+      {#each projectInfo.images as images_to_display}
+        <div>
+          <img src={images_to_display} alt="Image" width="100" height="100" />
+        </div>
+      {/each}
+    </div>
 
   </div>
+  <div class="column">
+    <h3>{projectInfo.name}</h3>
 
-  <h3>Image</h3>
+    <div class="intro">
+      <p>{projectInfo.summary}</p>
 
-  {#each projectInfo.images as images_to_display}
-    <div>
-      <img src={images_to_display} alt="Image" width="300" height="300" />
     </div>
-  {/each}
+
+    <h4>{projectInfo.tools}</h4>
+
+  </div>
 
 </div>
 
 <style>
+  .project-template {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    /* align-items: center;
+    justify-content: center; */
+    padding-top: 100px;
+    min-height: 100vh;
+  }
+
+  .column {
+    min-height: 100%;
+    flex-basis: 45%;
+  }
+
+  .column:last-of-type {
+    min-height: 100%;
+    flex-basis: 55%;
+  }
+
   .intro {
     display: inline-block;
   }
@@ -51,18 +83,12 @@
     shape-outside: ellipse();
   }
 
-  .project-template {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 100px;
+  .thumbnails {
   }
 
-  h1 {
+  h4 {
     color: white;
+    margin-top: 15px;
   }
 
   h3 {

@@ -31,7 +31,7 @@
 
 <style>
   .card {
-    flex: 1 1 19%;
+    /* flex: 1 1 150px; */
     height: 250px;
     border: 1px solid #aaa;
     border-radius: 3px;
@@ -47,17 +47,20 @@
   }
 
   h3 {
-    /* flex: 1 1 auto; */
-    height: 50px;
+    flex: 0 0 25px;
+    /* flex-basis: 50px; */
+    height: 20px;
     width: 100%;
-    padding: 0 0 1.4em 0;
+    /* padding: 0 0 1.4em 0; */
     /* margin: 0 0 1em 0; */
     border-bottom: 1px solid #ff3e00;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
 
   .image-class {
+    padding-top: 10px;
     flex: 0 1 auto;
   }
 
