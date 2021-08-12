@@ -43,7 +43,7 @@
     <h3>{projectInfo.name}</h3>
 
     <div class="intro">
-      <p>{projectInfo.summary}</p>
+      <p class="subhead">{projectInfo.summary}</p>
 
     </div>
 
@@ -102,5 +102,13 @@
     margin: 0 0 1em 0;
     border-bottom: 1px solid white;
     font-size: 2em;
+  }
+
+  .subhead::first-letter {
+    font-size: 28px;
+    float: left;
+    color: #99b946;
+    font-weight: bold;
+    margin-right: 0.5rem;
   }
 </style>
