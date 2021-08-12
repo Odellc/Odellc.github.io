@@ -1,5 +1,8 @@
 <script>
+  import { prevent_default } from "svelte/internal";
   import Disclaimer from "./Disclaimer.svelte";
+
+  export let baseURL;
 
   function changeBackground(e) {
     let yScroll = window.scrollY;
@@ -15,12 +18,32 @@
 <svelte:window on:scroll={e => changeBackground(e)} />
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#proficiencies">Proficiencies</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-  <a href="#contact">Hire Me!</a>
+  <a href="/">Home</a>
+  <a
+    href
+    on:click|preventDefault={() => (window.location = baseURL + '#about')}>
+    About
+  </a>
+  <a
+    href
+    on:click|preventDefault={() => (window.location = baseURL + '#proficiencies')}>
+    Proficiencies
+  </a>
+  <a
+    href
+    on:click|preventDefault={() => (window.location = baseURL + '#projects')}>
+    Projects
+  </a>
+  <a
+    href
+    on:click|preventDefault={() => (window.location = baseURL + '#contact')}>
+    Contact
+  </a>
+  <a
+    href
+    on:click|preventDefault={() => (window.location = baseURL + '#contact')}>
+    Hire Me!
+  </a>
   <Disclaimer />
 </nav>
 

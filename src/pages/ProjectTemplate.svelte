@@ -5,6 +5,7 @@
 
   export let params;
   let projectInfo = {};
+  let photoIndex = 0;
 
   //   onMount(() => {
   // console.log("Params", params);
@@ -19,24 +20,35 @@
     }
   }
 
+  $: console.log("photoIndex=", photoIndex);
+
   //   $: console.log("ProjectInfo:", projectInfo);
 </script>
 
 <div class="project-template">
   <div class="column">
-    {#each projectInfo.images as images_to_display}
-      <div>
-        <img src={images_to_display} alt="Image" width="300" height="300" />
-      </div>
-    {/each}
+    <div id="featured-photo">
+      <img
+        src={projectInfo.images[photoIndex]}
+        alt="Image"
+        width="100%"
+        height="auto" />
 
-    <div class="thumbnails">
-      {#each projectInfo.images as images_to_display}
-        <div>
-          <img src={images_to_display} alt="Image" width="100" height="100" />
-        </div>
-      {/each}
     </div>
+    {#if projectInfo.images.length > 1}
+      <div class="thumbnails">
+        {#each projectInfo.images as images_to_display, idx}
+          <div>
+            <img
+              src={images_to_display}
+              alt="Image"
+              width="100"
+              height="100"
+              on:click={() => (photoIndex = idx)} />
+          </div>
+        {/each}
+      </div>
+    {/if}
 
   </div>
   <div class="column">
@@ -47,7 +59,12 @@
 
     </div>
 
-    <h4>{projectInfo.tools}</h4>
+    <h4>Tools:</h4>
+    <div class="pills">
+      {#each projectInfo.tools as tool}
+        <div class="pill">{tool}</div>
+      {/each}
+    </div>
 
   </div>
 
@@ -69,9 +86,19 @@
     flex-basis: 45%;
   }
 
+  .column:first-of-type {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+  }
+
   .column:last-of-type {
     min-height: 100%;
     flex-basis: 55%;
+  }
+
+  #featured-photo {
+    margin-bottom: 15px;
   }
 
   .intro {
@@ -84,6 +111,9 @@
   }
 
   .thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
   }
 
   h4 {
@@ -104,11 +134,31 @@
     font-size: 2em;
   }
 
+  .subhead {
+    line-height: 40px;
+  }
+
   .subhead::first-letter {
-    font-size: 28px;
+    font-size: 32px;
     float: left;
     color: #99b946;
     font-weight: bold;
     margin-right: 0.5rem;
+  }
+
+  .pills {
+    display: flex;
+  }
+
+  .pill {
+    padding: 8px;
+    background-color: #99b946;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 </style>

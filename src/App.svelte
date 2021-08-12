@@ -4,11 +4,13 @@
 
   import Template from "./pages/ProjectTemplate.svelte";
   import Home from "./pages/Home.svelte";
-  import Proficiencies from "./Proficiencies.svelte"
+  import Proficiencies from "./Proficiencies.svelte";
 
   let page;
   let pageInfo = {};
   let params;
+
+  let baseURL = window.location.origin;
 
   let el;
 
@@ -25,13 +27,15 @@
   //   updatePageInfo("proficiencies","/proficiencies");
   // });
 
-
-  router("/:projectName", (context,next) => {
-    params = context.params;
-    // updatePageInfo("python","/python");
-    next();
-  },() => page = Template);
-
+  router(
+    "/:projectName",
+    (context, next) => {
+      params = context.params;
+      // updatePageInfo("python","/python");
+      next();
+    },
+    () => (page = Template)
+  );
 
   router("/*", () => {
     console.log("my page does not match");
@@ -47,23 +51,18 @@
   }
 
   const backToTop = () => {
-    if (window.pageYOffset >0){
+    if (window.pageYOffset > 0) {
       el.style.visibility = "visible";
-
-    }else{
+    } else {
       el.style.visibility = "hidden";
     }
-
   };
-
-
-  
 </script>
 
-<svelte:window on:scroll={backToTop}></svelte:window>
+<svelte:window on:scroll={backToTop} />
 <main>
-  <Navigation />
-  <svelte:component this={page} {params}></svelte:component>
+  <Navigation {baseURL} />
+  <svelte:component this={page} {params} />
   <div class="back-to-top">
     <a href="#home" bind:this={el}>^</a>
   </div>
@@ -71,12 +70,11 @@
 </main>
 
 <style>
-.back-to-top{
-  color: white;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  visibility: hidden;
-}
- 
+  .back-to-top {
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    visibility: hidden;
+  }
 </style>
