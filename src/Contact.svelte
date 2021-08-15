@@ -28,9 +28,7 @@
       rows="5"
       name="message"
       id="message"
-      placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus
-      sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec
-      ullamcorper nulla non metus auctor fringilla nullam quis risus."
+      placeholder="Message!"
       required="" />
     <input
       type="hidden"
@@ -52,7 +50,7 @@
   #fs-frm #card-element:disabled {
     font-family: inherit;
     font-size: 100%;
-    color: inherit;
+    color: black;
     border: none;
     border-radius: 0;
     display: block;
@@ -90,8 +88,8 @@
   #fs-frm textarea:focus {
     background-color: white;
     outline-style: solid;
-    outline-width: thin;
-    outline-color: gray;
+    outline-width: medium;
+    outline-color: #99b946;
     outline-offset: -1px;
   }
   #fs-frm [type="text"],
@@ -117,6 +115,7 @@
     margin-bottom: 0;
     background-color: #99b946;
     color: black;
+    font-weight: 600;
     border-radius: 8px;
   }
   #fs-frm select {

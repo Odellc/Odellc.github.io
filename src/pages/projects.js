@@ -30,8 +30,12 @@ export default [
     id: Math.random() * Date.now(),
     name: "Exploratory Analysis Tool",
     summary:
-      "I worked with another talented Programmer to develop a tool that could compete with Tableau. The idea was that we wanted to build something we felt would not only more intuitive but also work with future developmental needs such as Machine Learning, Regressions, and other Data Science needs. We wanted to use Svelte / JavaScript for its reactivity. We also wanted to use Python for its integration to Django and its vast amount of libraries which would allow for Machine Learning, Regression, and other future development ideas. Celery and Redis where a by-product due to the long running tasks. We integrated this to handle some of our really long tasks, along with some other asynchronous functions. The end result was for individuals to use drag and drop to visually explore their data. We also developed tools for them to quickly interact / change / preprocess their data. We incorporated ways to handle missing data with imputations, to change data types etc. Though this is still in development check out some of the features in the pictures below! Would love to connect more to discuss this at anytime.",
-    images: [],
+      "I worked with another talented Programmer to develop a tool that could compete with Tableau (Though not complete yet). The idea was that we wanted to build something we felt would not only more intuitive but also work with future developmental needs such as Machine Learning, Regressions, and other Data Science needs. We wanted to use Svelte / JavaScript for its reactivity. We also wanted to use Python for its integration to Django and its vast amount of libraries which would allow for Machine Learning, Regression, and other future development ideas. Celery and Redis where a by-product due to the long running tasks. We integrated this to handle some of our really long tasks, along with some other asynchronous functions. The end result was for individuals to use drag and drop to visually explore their data. We also developed tools for them to quickly interact / change / preprocess their data. We incorporated ways to handle missing data with imputations, to change data types etc. Though this is still in development check out some of the features in the pictures below! Would love to connect more to discuss this at anytime.",
+    images: [
+      "./assets/connectToData.PNG",
+      "./assets/Ineractive D3 Map with Drag n Drop.PNG",
+      "./assets/Intellicron_tools.PNG"
+    ],
     tools: [
       "Svelte",
       "JavaScript",
@@ -103,7 +107,7 @@ export default [
     id: Math.random() * Date.now(),
     name: "Top 20 Customers",
     summary:
-      "This project was unique in the sense that I had to create and maintain my own standing databases [Structured and Unsctructed] due to an operating agreement. Here I wanted to access one of the databases to give me the top 20 customers by year based on specific criteria. You can see this unique SQL code below that I used to run this report!",
+      "This project was unique in the sense that I had to create and maintain my own standing databases [Structured and Unsctructed] due to a joint operating agreement. Here I wanted to access one of the databases to give me the top 20 customers by year based on specific criteria. You can see this unique SQL code below that I used to run this report!",
     images: ["./assets/Top 20 Customers by Single Calendar Year.png"],
     tools: ["Database", "SQL"],
     filter: ["database", "sql"]
