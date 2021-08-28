@@ -143,7 +143,7 @@ export default [
     id: Math.random() * Date.now(),
     name: "This website!",
     summary:
-      "I wanted to build this website from the ground up, no cookie cutter site for me! Here you can see some of the JavaScript, CSS, and Svelte skills I have by showing my portfolio through a portfolio project. I hope you are enjoying it!",
+      "I wanted to build this website from the ground up, no cookie cutter site for me! Here you can see some of the JavaScript, CSS, and Svelte skills I have gained. I hope you are enjoying it!",
     images: ["./assets/this site.PNG"],
     tools: ["Svelte", "JavaScript"],
     filter: ["svetle", "javascript"]
@@ -159,7 +159,7 @@ export default [
       "./assets/Model Selection.PNG",
       "./assets/residuals of SCHL.PNG"
     ],
-    tools: ["R", "ggplot"],
+    tools: ["R", "ggplot", "data mining"],
     filter: ["r", "visualizations", "technical reports"]
   }
 ];
