@@ -12,7 +12,7 @@ export default [
     id: Math.random() * Date.now(),
     name: "Custom Timing Decorator",
     summary:
-      "When thinking about code performance and reusability. I noticed that a lot of times I kept using some of the normal start.time() and end.time() code to check out performance. As data keeps getting larger I really needed to focus some on the computation time. I decided to create a decorator that I could through on top of my functions/methods to get an idea of the performance. Though it isn’t what we would normally call as a standard time of project, it does have a purpose. The point of putting it here is to show you that I constantly think of improving, that I pay attention to performance and Big-O problems and lastly having modules for reusability help with scale and readability. I hope you enjoy checking out the code below!",
+      "I created this when I was trying to really improve code time performance and reusability. I noticed that often enough I kept using some of the normal start.time() and end.time() code to check out performance. As data keeps getting larger I really needed to focus some on the computation time. I decided to create a decorator that I could through on top of my functions/methods to get an idea of the performance. Though it isn’t what we would normally call as a standard time of project, it does have a purpose. The point of putting it here is to show you that I constantly think of improving, that I pay attention to performance and Big-O problems and lastly having modules for reusability help with scale and readability. I hope you enjoy checking out the code below!",
     images: ["./assets/Decorator.PNG"],
     tools: ["Python"],
     filter: ["python"]
