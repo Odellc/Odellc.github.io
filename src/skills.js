@@ -29,7 +29,7 @@ export default [
     url: "/Database",
     src: "./assets/Database.png",
     blurb:
-      "Experience with structured and unstructred data, with use of SQL, and helping structure relational databases. Also use of Graphql, API's and REST."
+      "Experience with structured and unstructred data, with use of SQL and some GraphQL, and helping structure relational databases. Also use of Graphql, API's and REST."
   },
   {
     id: 6,
