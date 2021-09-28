@@ -37,7 +37,7 @@ export default [
     url: "/Tableau",
     src: "./assets/Tableau.jpg",
     blurb:
-      "Love Tableau for quick analysis, dashboard distributions, or requiring report visualizations."
+      "I Love Tableau for quick analysis and nice visualizations, dashboard distributions, or requiring report visualizations."
   },
   // {
   //     id: 7,
