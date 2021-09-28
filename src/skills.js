@@ -21,7 +21,7 @@ export default [
     url: "/JavaScript",
     src: "./assets/JS.png",
     blurb:
-      "JavaScript is a great frontend development tool for website functionality. My framework of preference is Svelte, even this website is built in it! I have some minimal experience in React and Vue as well."
+      "JavaScript is a great frontend development tool for website functionality! My framework of preference is Svelte, even this website is built in it! I have some minimal experience in React and Vue as well."
   },
   {
     id: 5,
