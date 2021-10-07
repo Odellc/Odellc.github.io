@@ -29,7 +29,7 @@ export default [
     url: "/Database",
     src: "./assets/Database.png",
     blurb:
-      "Experience with structured and unstructred data and their manipulation using various tools. I sometimes use SQL and GraphQL to query data from various endpoints. I partnered in developing multiple relational database structures. Also use of Graphql, API's and REST."
+      "Experience with structured and unstructred data and their manipulation using various tools. I sometimes use SQL and GraphQL to query data from various endpoints. I partnered in developing multiple relational database structures and various tabels. Also use of Graphql, API's and REST."
   },
   {
     id: 6,
