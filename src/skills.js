@@ -5,7 +5,7 @@ export default [
     url: "/python",
     src: "./assets/Python.png",
     blurb:
-      "Python is my go to programming langauge for indepth analysis, data mining, machine learning, or automation."
+      "Python is my go to programming langauge for indepth analysis (or fun projects), data mining, machine learning, or automation."
   },
   {
     id: 2,
