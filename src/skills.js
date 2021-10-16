@@ -41,6 +41,9 @@ export default [
   },
   // {
   //     id: 7,
+
+
+  
   //     name: "DataMining",
   //     url: "/DataMining",
   //     src: "./assets/DM.png",
