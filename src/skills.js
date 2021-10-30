@@ -70,6 +70,7 @@ export default [
     blurb:
       "Experience in writing technical statistical reports for detailed communication at variance end user techincal levels."
   },
+
   // {
   //     id: 11,
   //     name: "Svelte",
@@ -77,6 +78,7 @@ export default [
   //     src: "./assets/SvelteLogo.png",
   //     blurb: "Written two web pages in svelte."
   // },
+  
   {
     id: 12,
     name: "Visualizations",
