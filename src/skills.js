@@ -78,7 +78,7 @@ export default [
   //     src: "./assets/SvelteLogo.png",
   //     blurb: "Written two web pages in svelte."
   // },
-  
+
   {
     id: 12,
     name: "Visualizations",
@@ -96,3 +96,4 @@ export default [
       "I have such a love for learning, and continious growth of my skills! Check back with me soon and see what more there is!"
   }
 ];
+
