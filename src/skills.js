@@ -96,4 +96,3 @@ export default [
       "I have such a love for learning, and continious growth of my skills! Check back with me soon and see what more there is!"
   }
 ];
-
