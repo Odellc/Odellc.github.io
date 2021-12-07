@@ -163,5 +163,3 @@ export default [
     filter: ["r", "visualizations", "technical reports"]
   }
 ];
-
-
