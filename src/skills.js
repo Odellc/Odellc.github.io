@@ -44,9 +44,9 @@ export default [
     id: 6,
     name: "PowerBI",
     url: "/PowerBI",
-    src: "./assets/PowerBI.jpg",
+    src: "./assets/PowerBI.png",
     blurb:
-      ""
+      "PowerBI is a great tool for quick analysis and nice visualizations, dashboard distributions, or requiring report visualizations."
   },
   {
       id: 7,
@@ -99,9 +99,9 @@ export default [
     id: 12,
     name: "Databricks",
     url: "/Databricks",
-    src: "./assets/Databricks.jpg",
+    src: "./assets/Databricks.png",
     blurb:
-      ""
+      "Experience in using Databricks for data engineering, data science, and machine learning projects. I have used Databricks for data processing, data analysis, and machine learning tasks."
   },
   {
     id: 13,
@@ -109,15 +109,15 @@ export default [
     url: "/LLM",
     src: "./assets/LLM.jpg",
     blurb:
-      ""
+      "Experience in using LLM's for various applications, including natural language processing, text generation, and language understanding. I have used LLM's for tasks such as text classification, sentiment analysis, and language translation."
   },
   {
     id: 14,
     name: "Agentic AI",
     url: "/Agentic",
-    src: "./assets/Agentic.jpg",
+    src: "./assets/Agentic.png",
     blurb:
-      ""
+      "Experience in leveraging Agents to automate tasks, enhance productivity, and improve decision-making processes. I have used Agents for various applications, including data analysis, customer service, and process automation."
   },{
     id: 15,
     name: "More to Come",

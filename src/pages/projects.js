@@ -176,6 +176,21 @@ export default [
     ],
     tools: ["Python", "data mining", "matplotlib", "pandas", "numpy", "HuggyFace", "Transformers", "PyTorch"],
     filter: ["python", "visualizations", "machine learning"]
+  },
+  {
+    id: Math.random() * Date.now(),
+    name:
+      "Replacing Dashbaords with Agentic AI",
+    summary:
+      "Evolutionalizing how stakeholders self-serve by replacing dashboards with agentic AI. TBD",
+    images: [
+      "./assets/LLM.JPG",
+      "./assets/Databricks.png",
+      "./assets/Top 10 Bottom 10 keywords by disaster ratio.PNG",
+      "./assets/Distribution of Tweet Text Lengths.PNG"
+    ],
+    tools: ["Python", "Agentic", "LLM", "HuggyFace", "Transformers", "PyTorch"],
+    filter: ["python", "Agentic", "machine learning", "React", "Javascript"]
   }
 
 ];
