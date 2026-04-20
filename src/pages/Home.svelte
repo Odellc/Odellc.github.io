@@ -17,7 +17,7 @@
     </div> -->
     <h1 class="name">Christopher Odell</h1>
     <h2 class="open">
-      Data Analytics Management | Data scientist | Data Engineer
+    Director | Data Leader | Data Analytics | Machine Learning | Data scientist | Data Engineer | Business Intelligence
     </h2>
   </section>
 

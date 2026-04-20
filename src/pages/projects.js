@@ -22,7 +22,7 @@ export default [
     name: "Pace Distribution by Gender – 2014 Boston Marathon",
     summary:
       "As an avid runner, I was curious about the Boston Marathon distribution. (One day I hope to make it). I wanted to create an interactive plot to highlight age and gender difference with a boxplot to show distribution. I gathered the data from the 2014 Boston Marathon, I then proceeded to do preprocessing. Besides cleaning up data, I also needed to establish groups for age and time performance. ",
-    images: ["./assets/Pace Distribution By Gender.PNG"],
+    images: ["./assets/Pace Distribution by Gender.PNG"],
     tools: ["R", "Plotly"],
     filter: ["r", "data mining", "visualizations"]
   },
@@ -161,7 +161,23 @@ export default [
     ],
     tools: ["R", "ggplot", "data mining"],
     filter: ["r", "visualizations", "technical reports"]
+  },
+  {
+    id: Math.random() * Date.now(),
+    name:
+      "Natural Language Processing (NLP) to predict if a tweet is a disaster or not",
+    summary:
+      "The goal is to predict whether a given tweet is about a real disaster or not. Submissions are evaluated using the F1 score between the predicted and expected answers, first round pass was a score of .8176. Most of the script is looking into the data and cleaning it up to actually be modeled on. The Tokenization portion is using denerta-v3-small which is a pre-trained publicly available general tokenizer. The purpose of this project was to mess around with NLP some more and get further in-depth with Transformers.",
+    images: [
+      "./assets/Distribution of Tweet Text Lengths.PNG",
+      "./assets/Distribution of Hashtag - Mentions - URL by Target.PNG",
+      "./assets/Top 10 Bottom 10 keywords by disaster ratio.PNG",
+      "./assets/Distribution of Tweet Text Lengths.PNG"
+    ],
+    tools: ["Python", "data mining", "matplotlib", "pandas", "numpy", "HuggyFace", "Transformers", "PyTorch"],
+    filter: ["python", "visualizations", "machine learning"]
   }
+
 ];
 
 

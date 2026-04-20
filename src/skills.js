@@ -25,7 +25,7 @@ export default [
       "JavaScript is a great frontend development tool for website functionality! My framework of preference is Svelte, even this website is built in it! I have some minimal experience in React and Vue as well."
   },
   {
-    id: 5,
+    id: 4,
     name: "Database",
     url: "/Database",
     src: "./assets/Database.png",
@@ -33,20 +33,28 @@ export default [
       "Experience with structured and unstructred data and their manipulation using various tools. I sometimes use SQL and GraphQL to query data from various endpoints. I partnered in developing multiple relational database structures and various tabels. Also use of Graphql, API's and REST."
   },
   {
-    id: 6,
+    id: 5,
     name: "Tableau",
     url: "/Tableau",
     src: "./assets/Tableau.jpg",
     blurb:
       "I Love Tableau for quick analysis and nice visualizations, dashboard distributions, or requiring report visualizations."
   },
-  // {
-  //     id: 7,
-  //     name: "DataMining",
-  //     url: "/DataMining",
-  //     src: "./assets/DM.png",
-  //     blurb: "For Data Mining I use Python and R to help find anomalies, patterns or correlations in the data."
-  // },
+  {
+    id: 6,
+    name: "PowerBI",
+    url: "/PowerBI",
+    src: "./assets/PowerBI.jpg",
+    blurb:
+      ""
+  },
+  {
+      id: 7,
+      name: "DataMining",
+      url: "/DataMining",
+      src: "./assets/DM.png",
+      blurb: "For Data Mining I use Python and R to help find anomalies, patterns or correlations in the data."
+  },
   // {
   //     id: 8,
   //     name: "Google Analytics",
@@ -55,7 +63,7 @@ export default [
   //     blurb: "Report and analyze real-time organizational web traffic, and user interactions with the websties."
   // },
   {
-    id: 9,
+    id: 8,
     name: "Machine Learning",
     url: "/Machine Learning",
     src: "./assets/ML.jpg",
@@ -63,7 +71,7 @@ export default [
       "Experience in supervised, unsupervised, and semi-supervised machine learning projects for predictions."
   },
   {
-    id: 10,
+    id: 9,
     name: "Technical Reports",
     url: "/TechReports",
     src: "./assets/TechnicalReport.png",
@@ -71,16 +79,16 @@ export default [
       "Experience in writing technical statistical reports for detailed communication at variance end user techincal levels."
   },
 
-  // {
-  //     id: 11,
-  //     name: "Svelte",
-  //     url: "/Svelte",
-  //     src: "./assets/SvelteLogo.png",
-  //     blurb: "Written two web pages in svelte."
-  // },
+  {
+    id: 10,
+    name: "Svelte",
+    url: "/Svelte",
+    src: "./assets/SvelteLogo.png",
+    blurb: "Written two web pages in svelte."
+  },
 
   {
-    id: 12,
+    id: 11,
     name: "Visualizations",
     url: "/Visualizations",
     src: "./assets/Visualization.jpg",
@@ -88,11 +96,34 @@ export default [
       "Meaniningful way to quickly communicate either abstract or conrete ideas, experience in Tableau, D3, matplotlib, gglot, and ploty."
   },
   {
+    id: 12,
+    name: "Databricks",
+    url: "/Databricks",
+    src: "./assets/Databricks.jpg",
+    blurb:
+      ""
+  },
+  {
     id: 13,
+    name: "LLM",
+    url: "/LLM",
+    src: "./assets/LLM.jpg",
+    blurb:
+      ""
+  },
+  {
+    id: 14,
+    name: "Agentic AI",
+    url: "/Agentic",
+    src: "./assets/Agentic.jpg",
+    blurb:
+      ""
+  },{
+    id: 15,
     name: "More to Come",
     src: "./assets/Learning.jpg",
     url: "#proficiencies",
     blurb:
       "I have such a love for learning, and continious growth of my skills! Check back with me soon and see what more there is!"
-  }
+  },
 ];
