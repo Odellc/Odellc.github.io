@@ -169,10 +169,10 @@ export default [
     summary:
       "The goal is to predict whether a given tweet is about a real disaster or not. Submissions are evaluated using the F1 score between the predicted and expected answers, first round pass was a score of .8176. Most of the script is looking into the data and cleaning it up to actually be modeled on. The Tokenization portion is using denerta-v3-small which is a pre-trained publicly available general tokenizer. The purpose of this project was to mess around with NLP some more and get further in-depth with Transformers.",
     images: [
-      "./assets/Distribution of Tweet Text Lengths.PNG",
-      "./assets/Distribution of Hashtag - Mentions - URL by Target.PNG",
-      "./assets/Top 10 Bottom 10 keywords by disaster ratio.PNG",
-      "./assets/Distribution of Tweet Text Lengths.PNG"
+      "./assets/Distribution of Tweet Text Lengths.png",
+      "./assets/Distribution of Hashtag - Mentions - URL by Target.png",
+      "./assets/Top 10 Bottom 10 keywords by disaster ratio.png",
+      "./assets/Distribution of Tweet Text Lengths.png"
     ],
     tools: ["Python", "data mining", "matplotlib", "pandas", "numpy", "HuggyFace", "Transformers", "PyTorch"],
     filter: ["python", "visualizations", "machine learning"]
@@ -184,13 +184,31 @@ export default [
     summary:
       "Evolutionalizing how stakeholders self-serve by replacing dashboards with agentic AI. TBD",
     images: [
-      "./assets/LLM.JPG",
-      "./assets/Databricks.png",
-      "./assets/Top 10 Bottom 10 keywords by disaster ratio.PNG",
-      "./assets/Distribution of Tweet Text Lengths.PNG"
+      "./assets/customer profile agent architecture UI MVP output.png",
+      "./assets/customer profile agent code.png",
+      "./assets/customer profile agent architecture PPT.png",
+      "./assets/Databricks app mcp development.png",
+      "./assets/customer profile slide communication example PPT.png",
     ],
-    tools: ["Python", "Agentic", "LLM", "HuggyFace", "Transformers", "PyTorch"],
-    filter: ["python", "Agentic", "machine learning", "React", "Javascript"]
+    tools: ["Python", "Agentic AI", "LLM", "HuggyFace", "Transformers", "PyTorch"],
+    filter: ["python", "Agentic AI", "machine learning", "React", "Javascript"]
+  },
+  {
+    id: Math.random() * Date.now(),
+    name:
+      "Effectively communicating with stakholders by creating clear and concise visualizations / PPTs",
+    summary:
+      "PPT",
+    images: [
+      "./assets/strategic alignment PPT.png",
+      "./assets/strategic evolution PPT.png",
+      "./assets/customer profile agent architecture PPT.png",
+      "./assets/user engagment dashboard.png",
+      "./assets/customer profile slide communication example PPT.png",
+      "./assets/Demographic.png",
+    ],
+    tools: ["PPT", "PowerBI", "Tableau", "UI/UX"],
+    filter: ["Visualitzation", "PPT", "PowerBI", "Tableau", "UI/UX"]
   }
 
 ];
