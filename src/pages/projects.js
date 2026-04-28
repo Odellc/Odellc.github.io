@@ -182,7 +182,7 @@ export default [
     name:
       "Replacing Dashbaords with Agentic AI",
     summary:
-      "Evolutionalizing how stakeholders self-serve by replacing dashboards with agentic AI. TBD",
+      "I stay focused on being impactful and revolutionary within my organization by continuously learning and bringing those insights back into the work. Over the past year I have been intentionally upskilling so I can guide my team through the technical shift from traditional dashboards to AI connected data ecosystems. We have consolidated scattered dashboards by building agentic solutions that use MCPs to interact with intelligent data assets. These agents connect to an AGUI layer that hosts interfaces capable of generating visualizations, insights, and answers on demand. This approach centralizes where stakeholders go for information, drives deeper insights than any single dashboard can provide, and gives the interface the flexibility to serve a wider range of users without forcing them through rigid, predefined dashboard paths.",
     images: [
       "./assets/customer profile agent architecture UI MVP output.png",
       "./assets/customer profile agent code.png",
@@ -198,7 +198,7 @@ export default [
     name:
       "Effectively communicating with stakholders by creating clear and concise visualizations / PPTs",
     summary:
-      "PPT",
+      "I prioritize effective communication as a core leadership skill, ensuring I can connect with stakeholders at every level and meet them where they are. I use my executive presence to guide strategic conversations with a broad, high level perspective, while also being able to dive into technical detail when a project needs hands on support to reach the finish line. Whether I am shaping a long term vision, facilitating cross functional alignment, or presenting complex ideas through clear and compelling presentations, I focus on making information accessible, actionable, and relevant. I believe that strong communication is not only about clarity but also about creating shared understanding, building trust, and enabling teams to move confidently in the same direction. This approach helps me bridge strategy and execution, empower my teams, and ensure that data driven insights translate into meaningful organizational impact.",
     images: [
       "./assets/strategic alignment PPT.png",
       "./assets/strategic evolution PPT.png",
