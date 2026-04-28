@@ -196,7 +196,7 @@ export default [
   {
     id: Math.random() * Date.now(),
     name:
-      "Effectively communicating with stakholders by creating clear and concise visualizations / PPTs",
+      "Effectively communicating with stakholders by creating clear and concise visualizations or PPTs",
     summary:
       "I prioritize effective communication as a core leadership skill, ensuring I can connect with stakeholders at every level and meet them where they are. I use my executive presence to guide strategic conversations with a broad, high level perspective, while also being able to dive into technical detail when a project needs hands on support to reach the finish line. Whether I am shaping a long term vision, facilitating cross functional alignment, or presenting complex ideas through clear and compelling presentations, I focus on making information accessible, actionable, and relevant. I believe that strong communication is not only about clarity but also about creating shared understanding, building trust, and enabling teams to move confidently in the same direction. This approach helps me bridge strategy and execution, empower my teams, and ensure that data driven insights translate into meaningful organizational impact.",
     images: [
