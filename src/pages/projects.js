@@ -209,6 +209,21 @@ export default [
     ],
     tools: ["PPT", "PowerBI", "Tableau", "UI/UX"],
     filter: ["Visualitzation", "PPT", "PowerBI", "Tableau", "UI/UX"]
+  },
+  {
+    id: Math.random() * Date.now(),
+    name:
+      "CNN Optimizer leveraged through LLMs",
+    summary:
+    "This code builds a complete deep learning workflow that trains and evaluates a custom convolutional neural network on the FashionMNIST dataset using PyTorch. It sets deterministic seeds for reproducibility, prepares normalized training, validation, and test splits, and visualizes sample images. The script defines a compact CNN architecture, implements training and evaluation loops, and compares the performance of multiple optimizers by running a controlled bake off across several epochs. It tracks accuracy and loss, plots validation performance, and selects the best optimizer before running a final test evaluation. The result is a clean, end to end experiment framework that demonstrates model development, experiment design, reproducibility, and comparative optimization in a real machine learning workflow.",
+      images: [
+      "./assets/cnn model comparisons.png",
+      "./assets/cnn_optimizer_code.png",
+      "./assets/samples_images_cnn.png",
+ 
+    ],
+    tools: ["LLM", "Python", "Tensor", "PyTorch"],
+    filter: ["python", "LLM", "machine learning", "deep learning", "CNN", "PyTorch"]
   }
 
 ];
